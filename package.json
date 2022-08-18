@@ -1,0 +1,23 @@
+{
+  "name": "idlesbandsite",
+  "version": "1.0.0",
+  "description": "- Create a new Node application inside of your Digital Crafts folder :dc-wrench:  .  - Run npm init - Install express and ejs - Create an app.js file and set up your server - Create the following folders inside of your application: public, data, views, routes - Create the data.json file inside of your data folder (data/data.json) run git init to initialize this as a git repo - Create a .gitignore file and add the node_modules folder to it - Create 2 routes inside of the routes folder: index.js and albums.js - Create 2 views inside of the views folder: index.ejs and albums.ejs - Connect your routes to your app.js file - Connect your views folder to your app.js file - Inside of your public folder, make an images folder (public/images) - Find the album cover for each album in your data file and put the images in the images folder. - Design the index.ejs page which is the front page of your application.  You can use bootstrap, flexbox or pure css. The front page is just a landing page about your artist. - Here is a video of one of my student’s taylor swift site.  Just work on the front page. You will using the data from your json file to populate the albums page on Monday https://www.youtube.com/watch?v=6RSOrFk6Vgo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvotion/bandSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cvotion/bandSite/issues"
+  },
+  "homepage": "https://github.com/cvotion/bandSite#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}

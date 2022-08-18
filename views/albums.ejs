@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/9884b37efe.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="row">
+        <div class="col  text-center mt-4"><a href="/">Home</a></div>
+        <div class="col text-center mt-4"><a href="https://open.spotify.com/artist/75mafsNqNE1WSEVxIKuY5C?si=hM2ALEmKRgecHS8IIIWh8Q">Spotify</a></div>
+        <div class="col text-center mt-4"><a href="https://music.apple.com/us/artist/idles/538474829">Apple</a></div>
+    </nav>
+    <div class="row header">
+        <div class="col-6">
+            <h1>IDLES</h1>
+            <!-- <img src="/images/band_img_1.jpeg" alt="" width="100%"> -->
+        </div>
+
+    </div>
+
+<div class="album row">
+    <div class="col-6">
+        <h2><%= album[0].albumName %> </h2>
+        <h3 class="lead"><%= album[0].releaseDate %> </h3>
+        <a href="/albums/<%= album[0].shortname %>"><img src="/images/<%= album[0].shortname %>.jpeg" alt="<%= album[0].shortname %>" width="400px"></a>
+    </div>
+    <div class="col-6">
+        <ol>
+            <% tracks.forEach(track => { %>
+                <li><%= track %> </li>
+            <% }) %>
+        </ol>
+    </div>
+    <p class="lead"><%= album[0].summary %> </p>
+    <a href="<%= album[0].albumAM %>" class="col-1"><i class="fa fa-music fa-3x" aria-hidden="true"></i></a>
+    <a href="<%= album[0].albumSM %>" class="col"><i class="fa fa-spotify fa-3x" aria-hidden="true"></i></a>
+
+</div>
+</body>
+</html>
