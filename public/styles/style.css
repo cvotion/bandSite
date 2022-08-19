@@ -5,6 +5,7 @@ body{
     margin: 0px;
     padding: 0px;
     color: black;
+    height: 100%;
 }
 
 a{
@@ -45,10 +46,16 @@ nav{
 footer{
     background-color: black;
     height: 15vh;
+    width: 100vw;
     font-size: 20px;
+    position: fixed;
+    bottom: 0px;
+    
+    
 }
 footer i{
    color: white;
+   margin-bottom: 0px;
 }
 
 .footerOption{
@@ -114,4 +121,28 @@ i:hover{
 .video{
     margin-bottom:20px;
 }
+
+.feedback-container{
+    margin-top: 5vh;
+    margin-left: 15px;
+}
+
+.bandImg{
+    margin-top: 5vh;
+    width: 50vw;
+}
+
+.feedback-top{
+    display: flex;
+    align-items: center;
+}
+.feedback-top h2{
+    font-size: 50px;
+    padding-top: 75px;
+}
+
+.pink{
+    background-color: rgb(255, 92, 92);
+}
+
 
