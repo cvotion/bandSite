@@ -15,11 +15,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="row">
-        <div class="col  text-center mt-4"><a href="/">HOME</a></div>
-        <div class="col text-center mt-4"><a href="https://open.spotify.com/artist/75mafsNqNE1WSEVxIKuY5C?si=hM2ALEmKRgecHS8IIIWh8Q">ALBUMS</a></div>
-        <div class="col text-center mt-4"><a href="https://music.apple.com/us/artist/idles/538474829">VIDEOS</a></div>
-    </nav>
+    <%- include('partials/nav.ejs') %> 
 <div class="row header">
     <div class="col-6">
         <h1>IDLES</h1>
@@ -41,12 +37,17 @@
     
 </div>
 
-<footer class="row">
-    <div class="col  text-center mt-4"><a href="https://twitter.com/idlesband?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"></a><i class="fa fa-twitter" aria-hidden="true"></i></div>
-    <div class="col  text-center mt-4"><a href="https://www.instagram.com/idlesband/?hl=en"></a><i class="fa fa-instagram" aria-hidden="true"></i></div>
-    <div class="col  text-center mt-4"><a href="https://www.youtube.com/channel/UCVm7tYTZONPLVujGX0rAJdw"></a><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
-    <div class="col text-center mt-4"><a href="https://open.spotify.com/artist/75mafsNqNE1WSEVxIKuY5C?si=hM2ALEmKRgecHS8IIIWh8Q"><i class="fa fa-spotify" aria-hidden="true"></i></a></div>
-    <div class="col text-center mt-4"><a href="https://music.apple.com/us/artist/idles/538474829"><i class="fa fa-music" aria-hidden="true"></i></a></div>
-</footer>
+    <div class="row video-container">
+        <% albums.forEach(album => { %>
+            <% album.videos.forEach(video => { %>
+                <div class="col-6 video"><iframe width="300" height="200" src="https://www.youtube.com/embed/<%= video %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        
+            <% }) %>
+        
+        <% }) %>
+    </div>
+
+<%- include('partials/footer.ejs') %>
+
 </body>
 </html>

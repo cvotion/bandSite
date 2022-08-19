@@ -17,7 +17,7 @@ a:hover{
 }
 
 h1{
-    font-size: 20vw;
+    font-size: 19vw;
     margin: 0px;
     padding: 0px;
 }
@@ -32,8 +32,11 @@ div{
 
 nav{
     background-color: black;
-    height: 5vh;
+    height: 10vh;
     font-size: 20px;
+}
+.navOption{
+    margin-top: 3vh;
 }
 
 .header{
@@ -41,11 +44,15 @@ nav{
 }
 footer{
     background-color: black;
-    height: 5vh;
+    height: 15vh;
     font-size: 20px;
 }
 footer i{
    color: white;
+}
+
+.footerOption{
+    margin-top: 5vh;
 }
 
 .about{
@@ -59,18 +66,22 @@ footer i{
 .album-container img{
     width: 316px;
 }
+.album-container img:hover{
+    width: 318px;
+    box-shadow: 0px 0px 15px rgb(255, 92, 92);
+}
 
 .album-container h2{
     margin-top: 30px;
     margin-left: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 1vh;
 }
 
 .album{
     margin-bottom: 10px;
 }
 .album h1, h2, h3, i {
-    margin-bottom: 10px;
+    margin-bottom: 2vh;
     margin-left: 15px;
 }
 .album p{
@@ -95,5 +106,12 @@ i{
 }
 i:hover{
     color: rgb(255, 92, 92)
+}
+
+.video-container{
+    margin-left: 15px;
+}
+.video{
+    margin-bottom:20px;
 }
 

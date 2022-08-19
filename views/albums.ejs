@@ -13,11 +13,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="row">
-        <div class="col  text-center mt-4"><a href="/">Home</a></div>
-        <div class="col text-center mt-4"><a href="https://open.spotify.com/artist/75mafsNqNE1WSEVxIKuY5C?si=hM2ALEmKRgecHS8IIIWh8Q">Spotify</a></div>
-        <div class="col text-center mt-4"><a href="https://music.apple.com/us/artist/idles/538474829">Apple</a></div>
-    </nav>
+    <%- include('partials/nav.ejs') %> 
     <div class="row header">
         <div class="col-6">
             <h1>IDLES</h1>
@@ -46,5 +42,7 @@
     <a href="<%= album[0].albumSM %>" class="col-1"><i class="fa fa-spotify fa-3x" aria-hidden="true"></i></a>
 
 </div>
+
+<%- include('partials/footer.ejs') %>
 </body>
 </html>
