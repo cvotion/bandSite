@@ -13,7 +13,6 @@ router.get('/albums/:id', (req, res)=>{
         if(albumObj.shortname == id){
             album.push(albumObj)
             tracks = albumObj.tracklist
-            console.log(album);
         }
     })
     res.render('albums',{

@@ -1,9 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     font-family: 'Roboto', sans-serif;
     /* background-color: rgb(255, 136, 136); */
     background-color: beige;
-    margin: 0px;
-    padding: 0px;
     color: black;
     height: 100%;
 }
@@ -22,6 +24,7 @@ h1{
     margin: 0px;
     padding: 0px;
 }
+
 img{
     margin-left: 15px;
     padding: 0px;
@@ -31,6 +34,12 @@ div{
     padding: 0px;
 }
 
+.b-container{
+    height: 75vh;
+    top: 10vh
+}
+
+/* ! Navigation */
 nav{
     background-color: black;
     height: 10vh;
@@ -40,6 +49,7 @@ nav{
     margin-top: 3vh;
 }
 
+/* ! Header and Footer */
 .header{
     margin-bottom: 20px;
 }
@@ -48,7 +58,7 @@ footer{
     height: 15vh;
     width: 100vw;
     font-size: 20px;
-    position: fixed;
+    margin-top: 10vh;
     bottom: 0px;
     
     
@@ -62,11 +72,13 @@ footer i{
     margin-top: 5vh;
 }
 
+
 .about{
     margin-top: 35%;
     min-width: 430px;
 }
 
+/* ! Album page */
 .album-container{
     margin-bottom: 50px;
 }
@@ -108,6 +120,7 @@ footer i{
     width: 99vw;
 }
 
+/* ! Icons */
 i{
     color: black;
 }
@@ -115,21 +128,30 @@ i:hover{
     color: rgb(255, 92, 92)
 }
 
+/* ! Video page */
 .video-container{
     margin-left: 15px;
+    display: flex;
+    justify-content: space-around;
+
 }
 .video{
     margin-bottom:20px;
+    display: flex;
+    justify-content: center;
 }
 
-.feedback-container{
-    margin-top: 5vh;
-    margin-left: 15px;
-}
 
 .bandImg{
     margin-top: 5vh;
     width: 50vw;
+}
+
+
+/* ! Feedback page */
+.feedback-container{
+    margin-top: 5vh;
+    margin-left: 15px;
 }
 
 .feedback-top{

@@ -11,11 +11,13 @@ let videosArr = []
 
 albums.forEach(album =>{
     album.videos.forEach(video =>{
-        videosArr.concat(video)
+        videosArr.push(video)
+        
     })
 })
 
 router.get('/videos', (req, res)=>{
+    
     res.render('videos',{
        videos: videosArr
     })
