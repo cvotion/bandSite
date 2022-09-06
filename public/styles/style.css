@@ -19,10 +19,18 @@ a:hover{
     color: rgb(255, 92, 92)
 }
 
-h1{
+.logo{
     font-size: 19vw;
     margin: 0px;
     padding: 0px;
+}
+.videos-logo{
+    font-size: 15vw;
+    margin: 0px;
+    padding: 0px;
+}
+.feedback-logo{
+    font-size: 7vw;
 }
 
 img{
@@ -158,7 +166,7 @@ i:hover{
     display: flex;
     align-items: center;
 }
-.feedback-top h2{
+.feedback-top{
     font-size: 50px;
     padding-top: 75px;
 }
